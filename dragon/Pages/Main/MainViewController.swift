@@ -28,16 +28,16 @@ class MainViewController: UIViewController {
         self.title = "Heroes"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
-        Api.items()
+        _ = Api.items()
             .observeOn(MainScheduler.instance)
             .subscribe(onSuccess: { json in
-                self._dataSource = json
-                self.mainViewDelegate.reloadTableView()
-                print("JSON: ", json)
-           },
-           onError: { error in
-                print("Error: ", error)
-           })
+                        self._dataSource = json
+                        self.mainViewDelegate.reloadTableView()
+                        print("JSON: ", json)
+                        },
+                       onError: { error in
+                        print(error.localizedDescription)
+                        })
     }
 }
 
