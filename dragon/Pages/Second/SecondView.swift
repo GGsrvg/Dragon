@@ -10,9 +10,9 @@ import UIKit
 import ImageLoader
 
 class SecondView: UIView {
-    @IBOutlet var heroImage: UIImageView!
-    @IBOutlet var title: UILabel!
-    @IBOutlet var desc: UILabel!
+    @IBOutlet private var heroImage: UIImageView!
+    @IBOutlet private var title: UILabel!
+    @IBOutlet private var desc: UILabel!
     
     func setData(_ item: Item){
         heroImage.load.request(with: URL(string: item.image)!)

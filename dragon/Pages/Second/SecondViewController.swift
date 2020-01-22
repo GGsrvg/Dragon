@@ -12,13 +12,17 @@ class SecondViewController: UIViewController {
     
     let secondView = UINib(nibName: "Second", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! SecondView
     
-    init(_ item: Item) {
+    init(_ item: Item? = nil) {
         super.init(nibName: nil, bundle: nil)
-        self.secondView.setData(item)
+        
+        if let item = item {
+            self.secondView.setData(item)
+        }
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(nibName: nil, bundle: nil)
+//        fatalError("init(coder:) has not been implemented")
     }
     
     override func loadView() {

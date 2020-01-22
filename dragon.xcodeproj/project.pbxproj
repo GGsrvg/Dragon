@@ -20,6 +20,9 @@
 		5B48322F23D238690045F267 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B48322E23D238690045F267 /* MainViewController.swift */; };
 		5B48323123D2387C0045F267 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B48323023D2387C0045F267 /* MainView.swift */; };
 		5B48323323D238850045F267 /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B48323223D238850045F267 /* Main.xib */; };
+		5BE9071423D736FF00C6E6F6 /* MainiPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE9071323D736FF00C6E6F6 /* MainiPadViewController.swift */; };
+		5BE9075523D87BE100C6E6F6 /* MainiPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE9075423D87BE100C6E6F6 /* MainiPadView.swift */; };
+		5BE9075723D87BF300C6E6F6 /* MainiPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE9075623D87BF300C6E6F6 /* MainiPad.xib */; };
 		5BFB0B9C23D23F970060A762 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB0B9B23D23F970060A762 /* SecondView.swift */; };
 		5BFB0B9F23D23FA70060A762 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB0B9D23D23FA70060A762 /* SecondViewController.swift */; };
 		5BFB0BA223D241210060A762 /* MainDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB0BA123D241210060A762 /* MainDelegate.swift */; };
@@ -45,6 +48,9 @@
 		5B48322E23D238690045F267 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5B48323023D2387C0045F267 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5B48323223D238850045F267 /* Main.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Main.xib; sourceTree = "<group>"; };
+		5BE9071323D736FF00C6E6F6 /* MainiPadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainiPadViewController.swift; sourceTree = "<group>"; };
+		5BE9075423D87BE100C6E6F6 /* MainiPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainiPadView.swift; sourceTree = "<group>"; };
+		5BE9075623D87BF300C6E6F6 /* MainiPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainiPad.xib; sourceTree = "<group>"; };
 		5BFB0B9B23D23F970060A762 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		5BFB0B9D23D23FA70060A762 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5BFB0BA123D241210060A762 /* MainDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 		5B48322C23D238490045F267 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				5BE9071223D736DF00C6E6F6 /* MainiPad */,
 				5BFB0B9A23D23F7E0060A762 /* Second */,
 				5B48322D23D238520045F267 /* Main */,
 			);
@@ -153,6 +160,16 @@
 				5B48323223D238850045F267 /* Main.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		5BE9071223D736DF00C6E6F6 /* MainiPad */ = {
+			isa = PBXGroup;
+			children = (
+				5BE9071323D736FF00C6E6F6 /* MainiPadViewController.swift */,
+				5BE9075423D87BE100C6E6F6 /* MainiPadView.swift */,
+				5BE9075623D87BF300C6E6F6 /* MainiPad.xib */,
+			);
+			path = MainiPad;
 			sourceTree = "<group>";
 		};
 		5BFB0B9923D23EB30060A762 /* Resources */ = {
@@ -260,6 +277,7 @@
 				5B48323323D238850045F267 /* Main.xib in Resources */,
 				5B48322523D237F30045F267 /* LaunchScreen.storyboard in Resources */,
 				5B48322223D237F30045F267 /* Assets.xcassets in Resources */,
+				5BE9075723D87BF300C6E6F6 /* MainiPad.xib in Resources */,
 				5BFB0BA423D245480060A762 /* Second.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +336,7 @@
 				5B143FA023D44C9F00E9D094 /* Api.swift in Sources */,
 				5BFB0B9F23D23FA70060A762 /* SecondViewController.swift in Sources */,
 				5B48321923D237F20045F267 /* AppDelegate.swift in Sources */,
+				5BE9071423D736FF00C6E6F6 /* MainiPadViewController.swift in Sources */,
 				5BFB0BA223D241210060A762 /* MainDelegate.swift in Sources */,
 				5BFB0B9C23D23F970060A762 /* SecondView.swift in Sources */,
 				5B01900123D42B9000FA344A /* MainTableViewCell.swift in Sources */,
@@ -325,6 +344,7 @@
 				5B48321B23D237F30045F267 /* SceneDelegate.swift in Sources */,
 				5B48323123D2387C0045F267 /* MainView.swift in Sources */,
 				5B48322F23D238690045F267 /* MainViewController.swift in Sources */,
+				5BE9075523D87BE100C6E6F6 /* MainiPadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

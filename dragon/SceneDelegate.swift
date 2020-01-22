@@ -19,7 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            let mainViewController = MainViewController()
+            
+            let mainViewController: UIViewController = UIDevice.current.userInterfaceIdiom == .phone ? MainViewController() : MainiPadViewController()
+            
             let navigationController = UINavigationController(rootViewController: mainViewController)
             window.rootViewController = navigationController
             

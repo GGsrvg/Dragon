@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MainiPadView" customModule="Dragon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GdV-bI-Q7x">
+                    <rect key="frame" x="0.0" y="0.0" width="324" height="1080"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xb-3d-MB5">
+                    <rect key="frame" x="324" y="0.0" width="486" height="1080"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0xb-3d-MB5" secondAttribute="trailing" id="Afz-L4-eJR"/>
+                <constraint firstItem="GdV-bI-Q7x" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="AiN-an-olU"/>
+                <constraint firstItem="0xb-3d-MB5" firstAttribute="leading" secondItem="GdV-bI-Q7x" secondAttribute="trailing" id="E2z-Gh-ucG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="GdV-bI-Q7x" secondAttribute="bottom" id="X0m-cG-lxn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0xb-3d-MB5" secondAttribute="bottom" id="ZwU-Rz-C7h"/>
+                <constraint firstItem="GdV-bI-Q7x" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hDZ-tX-vEL"/>
+                <constraint firstItem="0xb-3d-MB5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="kKt-ae-deg"/>
+                <constraint firstItem="GdV-bI-Q7x" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="rFu-SQ-dmE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="AboutUIView" destination="0xb-3d-MB5" id="ugO-WH-DzC"/>
+                <outlet property="ListUIView" destination="GdV-bI-Q7x" id="EDu-kr-i9N"/>
+            </connections>
+            <point key="canvasLocation" x="131.85185185185185" y="128.88888888888889"/>
+        </view>
+    </objects>
+</document>

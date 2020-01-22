@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
 
     let mainView = UINib(nibName: "Main", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! MainView
     var mainViewDelegate: MainViewDelegate!
+    var secondController: SecondViewController!
     
     private var _dataSource: ApiResponse?
     
@@ -49,7 +50,13 @@ extension MainViewController: MainDelegate {
     }
     
     func openSecond(_ id: Int) {
-        let secondController = SecondViewController(dataSource!.items[id])
-        self.navigationController?.present(secondController, animated: true, completion: nil)
+        secondController = nil
+        secondController = SecondViewController(dataSource!.items[id])
+        
+        if let parent = self.parent as? MainiPadViewController {
+            parent.replace(secondController.secondView)
+        } else {
+            self.navigationController?.present(secondController, animated: true, completion: nil)
+        }
     }
 }
