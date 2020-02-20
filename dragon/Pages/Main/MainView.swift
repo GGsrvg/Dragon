@@ -19,6 +19,7 @@ class MainView: UIView {
         let nib = UINib(nibName: "MainTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "MainTableViewCell")
         self.tableView.dataSource = self
+        self.tableView.rowHeight = 106
     }
 }
 

@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
             .subscribe(onSuccess: { json in
                         self._dataSource = json
                         self.mainViewDelegate.reloadTableView()
-                        print("JSON: ", json)
+                        //print("JSON: ", json)
                         },
                        onError: { error in
                         print(error.localizedDescription)
